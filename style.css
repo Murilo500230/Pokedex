@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lato' sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: 'Kanit', sans-serif;
 }
 
 body{
@@ -20,8 +22,10 @@ h1{
 }
 
 .pokeContainer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+    row-gap: 7px;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
